@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Roboto, sans-serif;
+    background-color: #eee;
+}
+
+header {
+    background-color: #0067da;
+    color: #fff;
+}
+
+header .container {
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 84px;
+}
+
+header .container nav {
+    margin-left: 104px;
+}
+
+header .container nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+}
+
+header .container nav li a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-style: italic;    
+}
+
+h2 {
+    color: #0067da;
+    padding-bottom: 16px;
+    border-bottom: 3px solid #0067da;
+    margin-bottom: 48px;
+    width: 100%;
+}
+
+section {
+    padding: 48px 0 32px;
+}
+
+.container {    
+    margin: 0 auto;
+    max-width: 1360px;   
+    padding: 0 84px; 
+}
+
+#sobre .container {
+    display: flex;
+}
+
+#sobre .container .imagem {
+    margin-right: 48px;
+    margin-bottom: 32px;
+}
+
+#produtos {
+    padding-bottom: 160px;
+}
+
+#produtos .container {
+    display: flex;
+    flex-direction: column;
+}
+
+#produtos .container .produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%;
+    row-gap: 5%;
+}
+
+#produtos .container .produtos img {
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+#produtos .container .produtos h3 {
+    margin-bottom: 16px;
+}
+
+#produtos .container .produtos p {
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+#produtos .container .produtos a {
+    padding: 8px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: #0067da;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media ( max-width: 1024px ) {
+    #produtos .container .produtos {
+        grid-template-columns: repeat(2, 48.8%);
+    }
+
+    #sobre .container {
+        flex-direction: column;
+    }
+
+    #sobre .container .imagem {
+        margin-right: 0;
+    }
+
+    #sobre .container .imagem img {
+        width: 100%;
+    }
+}
+
+@media ( max-width: 640px ) {
+
+    header .container {
+        padding-inline: 40px;
+    }
+
+    header .container nav {
+        margin-left: 80px;
+    }
+    
+    .container {       
+        padding: 0 40px; 
+    }
+
+    #produtos .container .produtos {
+        grid-template-columns: 100%;
+        row-gap: 1%;
+    }
+
+    
+
+}
